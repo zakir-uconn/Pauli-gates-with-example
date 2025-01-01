@@ -15,119 +15,24 @@ Each Pauli gate corresponds to a specific operation on the Bloch sphere. Below a
 
 
 ### Example:
-Input state: \(\ket{0}\)
-
-Apply \(X\):
-\[
-X\ket{0} = 
-\begin{bmatrix}
-0 & 1 \\
-1 & 0
-\end{bmatrix}
-\begin{bmatrix}
-1 \\
-0
-\end{bmatrix}
-=
-\begin{bmatrix}
-0 \\
-1
-\end{bmatrix}
-= \ket{1}
-\]
-
-Result: \(\ket{1}\)
+<img width="289" alt="image" src="https://github.com/user-attachments/assets/d72ccf4c-f4b9-4b94-b29e-6fc007823c4c" />
 
 **Geometric Interpretation:**
 The \(X\) gate rotates the qubit by 180° around the X-axis on the Bloch sphere.
 
 ---
 
-## 2. Pauli-Y Gate (\(Y\))
-
-The \(Y\) gate combines a bit-flip (\(X\)) and a phase-flip (\(Z\)) operation. It is represented as:
-\[
-Y = iXZ
-\]
-
-Matrix form:
-\[
-Y = 
-\begin{bmatrix}
-0 & -i \\
-i & 0
-\end{bmatrix}
-\]
-
-### Example:
-Input state: \(\ket{0}\)
-
-Apply \(Y\):
-\[
-Y\ket{0} = 
-\begin{bmatrix}
-0 & -i \\
-i & 0
-\end{bmatrix}
-\begin{bmatrix}
-1 \\
-0
-\end{bmatrix}
-=
-\begin{bmatrix}
-0 \\
-i
-\end{bmatrix}
-= i\ket{1}
-\]
-
-Result: \(i\ket{1}\) (a global phase factor \(i\) is added).
+## 2. Pauli-Y Gate \(Y\)
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/a842ad74-1bfb-4098-a2e7-2dc29bf7be4f" />
 
 **Geometric Interpretation:**
 The \(Y\) gate rotates the qubit by 180° around the Y-axis on the Bloch sphere.
 
 ---
 
-## 3. Pauli-Z Gate (\(Z\))
+## 3. Pauli-Z Gate \(Z\)
+<img width="314" alt="image" src="https://github.com/user-attachments/assets/0951e05f-910e-4316-8a3e-29ca06061911" />
 
-The \(Z\) gate introduces a phase flip. It leaves \(\ket{0}\) unchanged but flips the sign of \(\ket{1}\):
-
-\[
-\ket{0} \rightarrow \ket{0}, \quad \ket{1} \rightarrow -\ket{1}
-\]
-
-Matrix form:
-\[
-Z = 
-\begin{bmatrix}
-1 & 0 \\
-0 & -1
-\end{bmatrix}
-\]
-
-### Example:
-Input state: \(\ket{1}\)
-
-Apply \(Z\):
-\[
-Z\ket{1} = 
-\begin{bmatrix}
-1 & 0 \\
-0 & -1
-\end{bmatrix}
-\begin{bmatrix}
-0 \\
-1
-\end{bmatrix}
-=
-\begin{bmatrix}
-0 \\
--1
-\end{bmatrix}
-= -\ket{1}
-\]
-
-Result: \(-\ket{1}\)
 
 **Geometric Interpretation:**
 The \(Z\) gate rotates the qubit by 180° around the Z-axis on the Bloch sphere.
@@ -138,9 +43,9 @@ The \(Z\) gate rotates the qubit by 180° around the Z-axis on the Bloch sphere.
 
 | Gate      | Operation                | Matrix                                      | Geometric Effect                   |
 |-----------|--------------------------|---------------------------------------------|-------------------------------------|
-| Pauli-X   | Bit-flip (NOT gate)      | \(\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}\) | Rotate 180° around X-axis          |
-| Pauli-Y   | Bit-flip + Phase-flip    | \(\begin{bmatrix} 0 & -i \\ i & 0 \end{bmatrix}\) | Rotate 180° around Y-axis          |
-| Pauli-Z   | Phase-flip               | \(\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}\) | Rotate 180° around Z-axis          |
+| Pauli-X   | Bit-flip (NOT gate)      | <img width="31" alt="image" src="https://github.com/user-attachments/assets/aeded10c-2096-4207-a0e2-27f7273f7a87" />| Rotate 180° around X-axis          |
+| Pauli-Y   | Bit-flip + Phase-flip    | <img width="35" alt="image" src="https://github.com/user-attachments/assets/c10a497f-88b2-4bb3-b890-075bdd534e6c" />| Rotate 180° around Y-axis          |
+| Pauli-Z   | Phase-flip               | <img width="33" alt="image" src="https://github.com/user-attachments/assets/b66dd3a7-b29d-499c-a5b6-20bf414535cc" />| Rotate 180° around Z-axis          |
 
 ---
 
